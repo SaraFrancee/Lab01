@@ -30,5 +30,11 @@ public class Parole {
 		elencoParole.clear();
 		return;
 	}
+	
+	public void cancel(String s) {
+		if (elencoParole.contains(s))
+			elencoParole.remove(s);
+		return;
+	}
 
 }

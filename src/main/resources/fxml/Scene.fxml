@@ -43,11 +43,24 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </TextArea>
-            <Button fx:id="btnReset" disable="true" mnemonicParsing="false" onAction="#doReset" text="Reset">
+            <TextArea fx:id="txtPrestazioni" prefHeight="47.0" prefWidth="263.0" />
+            <HBox prefHeight="10.0" prefWidth="270.0">
+               <children>
+                  <Button fx:id="btnCancel" disable="true" mnemonicParsing="false" onAction="#doCancel" text="Cancel">
+                     <HBox.margin>
+                        <Insets left="160.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnReset" disable="true" mnemonicParsing="false" onAction="#doReset" text="Reset">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
                <VBox.margin>
-                  <Insets bottom="5.0" left="230.0" right="5.0" top="5.0" />
+                  <Insets bottom="15.0" top="10.0" />
                </VBox.margin>
-            </Button>
+            </HBox>
          </children>
       </VBox>
    </center>
