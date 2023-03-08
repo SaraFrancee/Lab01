@@ -1,7 +1,7 @@
 package it.polito.tdp.Lab01.model;
 
+import java.util.ArrayList;
 import java.util.Collections;
-import java.util.LinkedList;
 import java.util.List;
 
 public class Parole {
@@ -9,7 +9,7 @@ public class Parole {
 	List<String> elencoParole;
 		
 	public Parole() {
-		elencoParole = new LinkedList<String>();
+		elencoParole = new ArrayList<String>();
 	}
 	
 	public void addParola(String p) {
@@ -21,7 +21,7 @@ public class Parole {
 	}
 	
 	public List<String> getElenco() {
-		LinkedList<String> copia = new LinkedList<String>(elencoParole);
+		ArrayList<String> copia = new ArrayList<String>(elencoParole);
 		Collections.sort(copia);
 		return copia;
 	}
